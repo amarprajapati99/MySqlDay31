@@ -53,4 +53,17 @@ mysql> SELECT COUNT(state) FROM address_book;
 //Query to sorted address book by city alphabetically
 
 mysql> SELECT firstName FROM address_book order by city ASC;
-mysql> SELECT * from Address_Book ORDER BY city ASC;
+mysql> SELECT * from address_book ORDER BY city ASC;
+
+
+// Query to add type field in the Address_Book Table
+mysql> ALTER TABLE address_book ADD type VARCHAR(150) AFTER email;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> update address_book set type = 'Family' where firstName = 'Kelly' or firstName = 'Zach';
+Query OK, 2 rows affected (0.01 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+
+
