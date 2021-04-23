@@ -69,4 +69,9 @@ Rows matched: 2  Changed: 2  Warnings: 0
 
 mysql> SELECT type, COUNT(*) FROM address_book GROUP BY type;
 
+//Query to add a person to both family and friends
+
+mysql> INSERT INTO address_book ( firstName, lastName, address, city, state, zip, phoneNumber, email, type) VALUES
+    -> ('Heddan', 'come', '2164 Garden Brook Dr', 'Junior', 'TX', 68430, 852427768, 'xyxz@gmail.com', 'Family');
+Query OK, 1 row affected (0.01 sec)
 
