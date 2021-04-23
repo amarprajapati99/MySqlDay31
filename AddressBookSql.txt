@@ -33,3 +33,9 @@ mysql> update address_book set address = '10 Streat' where firstName = 'Jesse';
 Query OK, 1 row affected (0.01 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
+
+Query to delete contact using persons name
+
+mysql> DELETE FROM address_book where firstName = 'Jesse';
+Query OK, 1 row affected (0.01 sec)
+
