@@ -65,5 +65,8 @@ mysql> update address_book set type = 'Family' where firstName = 'Kelly' or firs
 Query OK, 2 rows affected (0.01 sec)
 Rows matched: 2  Changed: 2  Warnings: 0
 
+//Query to get number of persons count by type
+
+mysql> SELECT type, COUNT(*) FROM address_book GROUP BY type;
 
 
