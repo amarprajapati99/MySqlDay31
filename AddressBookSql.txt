@@ -1,0 +1,4 @@
+// create database
+
+mysql> create database address_book;
+Query OK, 1 row affected (0.02 sec)
