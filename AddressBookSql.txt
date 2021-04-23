@@ -17,3 +17,12 @@ CREATE TABLE address_book
     -> email VARCHAR(150) NOT NULL
     -> );
 Query OK, 0 rows affected, 2 warnings (0.09 sec)
+
+// Query to add details into table  
+
+mysql> INSERT INTO Address_Book ( firstName, lastName, address, city, state, zip, phoneNumber, email) VALUES
+    -> ('Kelly', 'Kapowski', '16 Scranton Ave', 'Scranton', 'PA', 18503, 800554581, 'morgan.kapowski@gmail.com'),
+    -> ('Jesse', 'Spano', '25 First Streat', 'Cambridge', 'MA', 21430, 8884555768, 'jacy.spano@hotmail.com');
+Query OK, 2 rows affected (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
