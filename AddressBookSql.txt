@@ -75,3 +75,18 @@ mysql> INSERT INTO address_book ( firstName, lastName, address, city, state, zip
     -> ('Heddan', 'come', '2164 Garden Brook Dr', 'Junior', 'TX', 68430, 852427768, 'xyxz@gmail.com', 'Family');
 Query OK, 1 row affected (0.01 sec)
 
+
+UC 13:
+
+// Query to implement ER diagram for address book
+
+mysql> CREATE TABLE type (
+    -> typeID INT unsigned NOT NULL AUTO_INCREMENT,
+    -> type VARCHAR(150) NOT NULL,
+    -> contId INT NOT NULL,
+    -> PRIMARY KEY (typeID),
+    -> FOREIGN KEY (contId) REFERENCES Address_Book(srNo)
+    -> );
+mysql> INSERT INTO type (typeID, type, contId) VALUES
+    -> (1, 'Friends', 5),
+    -> (2, 'Family', 5);
